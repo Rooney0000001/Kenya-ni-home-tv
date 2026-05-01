@@ -70,10 +70,20 @@
       background: white;
       padding: 15px;
       border-radius: 10px;
+      transition: 0.3s;
     }
 
-    .card h3 {
-      margin-top: 0;
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -107,6 +117,47 @@
 
 <div class="container">
 
+  <div class="hero">
+    <h2>Main Headline Story</h2>
+    <p>This is your main breaking news section. Update it daily with top stories.</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <h3>Politics Update</h3>
+      <p>Latest political news from Kenya.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <h3>Sports News</h3>
+      <p>Football and sports updates.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <h3>Entertainment</h3>
+      <p>Celebrity and trending stories.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <h3>Local News</h3>
+      <p>Stories from across Kenya.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Kenya Ni Home TV | Built by Rooney
+</footer>
+
+</body>
+</html>
   <div class="hero">
     <h2>Main Headline Story</h2>
     <p>This section is for your most important news update of the day. You can replace this daily.</p>
