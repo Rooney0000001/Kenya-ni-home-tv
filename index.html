@@ -4,96 +4,108 @@
   <title>Kenya Ni Home TV</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ececec;
+}
 
-    header {
-      background: #000;
-      color: white;
-      padding: 25px;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: #111;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+/* NAV */
+nav {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-    nav {
-      background: #222;
-      padding: 10px;
-      text-align: center;
-    }
+nav a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a:hover {
+  background: red;
+}
 
-    .breaking {
-      background: red;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
+/* BREAKING */
+.breaking {
+  background: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+/* LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
 
-    .hero {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+/* HERO */
+.hero {
+  background: white;
+  padding: 25px;
+  border-left: 6px solid red;
+  margin-bottom: 20px;
+}
 
-    .hero h2 {
-      margin-top: 0;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
 
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-    }
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
+.card h3 {
+  padding: 10px;
+  margin: 0;
+}
 
-    footer {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
+.card p {
+  padding: 0 10px 15px 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
@@ -125,29 +137,32 @@
   <div class="grid">
 
     <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Politics Update</h3>
-      <p>Latest political news from Kenya.</p>
-    </div>
+  <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c">
+  <h3>Kenya Politics Update</h3>
+  <p>Latest developments in national politics and government decisions.</p>
+<a href="article.html">Read More</a>
+</div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Sports News</h3>
-      <p>Football and sports updates.</p>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2">
+  <h3>Football News Kenya</h3>
+  <p>Local and international football updates, scores and transfers.</p>
+  <a href="article.html">Read More</a>
+</div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Entertainment</h3>
-      <p>Celebrity and trending stories.</p>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c">
+  <h3>Entertainment Buzz</h3>
+  <p>Celebrity stories, trending news, and lifestyle updates.</p>
+  <a href="article.html">Read More</a>
+</div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Local News</h3>
-      <p>Stories from across Kenya.</p>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+  <h3>Local News</h3>
+  <p>Stories happening across different counties in Kenya.</p>
+  <a href="article.html">Read More</a>
     </div>
-
   </div>
 
 </div>
