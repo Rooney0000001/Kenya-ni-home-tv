@@ -5,16 +5,21 @@
 
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
 
     header {
       background: #000;
       color: white;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
 
     nav {
@@ -38,41 +43,45 @@
       font-weight: bold;
     }
 
-    main {
-      padding: 20px;
-      max-width: 900px;
+    .container {
+      max-width: 1000px;
       margin: auto;
+      padding: 20px;
     }
 
-    .featured {
+    .hero {
       background: white;
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
 
-    article {
+    .hero h2 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
       background: white;
       padding: 15px;
-      margin-bottom: 15px;
       border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
     }
 
     footer {
       background: black;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       margin-top: 20px;
-    }
-
-    button {
-      background: black;
-      color: white;
-      padding: 10px;
-      border: none;
-      margin-top: 10px;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -81,7 +90,7 @@
 
 <header>
   <h1>KENYA NI HOME TV</h1>
-  <p>News • Stories • Truth</p>
+  <p>News • Politics • Sports • Entertainment</p>
 </header>
 
 <nav>
@@ -89,35 +98,49 @@
   <a href="#">News</a>
   <a href="#">Sports</a>
   <a href="#">Politics</a>
+  <a href="#">Entertainment</a>
 </nav>
 
 <div class="breaking">
-  🔴 BREAKING NEWS: Welcome to Kenya Ni Home TV Blog Launch
+  🔴 BREAKING: Welcome to Kenya Ni Home TV Official News Platform
 </div>
 
-<main>
+<div class="container">
 
-  <div class="featured">
-    <h2>Featured Story</h2>
-    <p>This is your main headline story area. You will use this for top news.</p>
-    <button>Read More</button>
+  <div class="hero">
+    <h2>Main Headline Story</h2>
+    <p>This section is for your most important news update of the day. You can replace this daily.</p>
   </div>
 
-  <article>
-    <h3>Story 1</h3>
-    <p>This is where your daily news articles will appear.</p>
-  </article>
+  <div class="grid">
 
-  <article>
-    <h3>Story 2</h3>
-    <p>You can post politics, sports, or entertainment updates here.</p>
-  </article>
+    <div class="card">
+      <h3>Politics Update</h3>
+      <p>Latest political news will appear here.</p>
+    </div>
 
-</main>
+    <div class="card">
+      <h3>Sports News</h3>
+      <p>Football, results, and updates.</p>
+    </div>
+
+    <div class="card">
+      <h3>Entertainment</h3>
+      <p>Celebrity and trending stories.</p>
+    </div>
+
+    <div class="card">
+      <h3>Local News</h3>
+      <p>Stories from across Kenya.</p>
+    </div>
+
+  </div>
+
+</div>
 
 <footer>
-  © 2026 Kenya Ni Home TV | All Rights Reserved
+  © 2026 Kenya Ni Home TV | Built by Rooney
 </footer>
 
 </body>
-  </html>
+        </html>
